@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todo2/static/css/main.846a404e.css",
+    "main.js": "/todo2/static/js/main.3f8ea0c9.js",
+    "static/media/Roboto-Regular.ttf": "/todo2/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
+    "static/media/Roboto-Bold.ttf": "/todo2/static/media/Roboto-Bold.17451a4c1cd55e33ac57.ttf",
+    "index.html": "/todo2/index.html",
+    "main.846a404e.css.map": "/todo2/static/css/main.846a404e.css.map",
+    "main.3f8ea0c9.js.map": "/todo2/static/js/main.3f8ea0c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.846a404e.css",
+    "static/js/main.3f8ea0c9.js"
+  ]
+}
