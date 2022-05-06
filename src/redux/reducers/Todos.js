@@ -5,7 +5,8 @@ import { ADD_TODO,
         DELETE_TODO, 
         CANCEL_EDIT_ITEM, 
         EDIT_ITEM, 
-        SELECT_EDIT_ITEM } from '../actions/actionTypes';
+        SELECT_EDIT_ITEM,
+        REORDER_ITEM } from '../actions/actionTypes';
 
 const TodosReducer = (state, action) => {
   switch (action.type) {
@@ -54,6 +55,14 @@ const TodosReducer = (state, action) => {
       const newState = state.items.length ? {...state, editingItem: {}} : {...state}
       return newState;
     };
+
+    case REORDER_ITEM: {
+      const clone = [...state.items];
+      const [removed] = clone.splice(action.payload.initialPosition, 1);
+      clone.splice(action.payload.newPosition, 0, removed);
+
+      return { ...state, items: clone };
+    }
 
     default: return state;
       
